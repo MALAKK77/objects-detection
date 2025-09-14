@@ -4,10 +4,14 @@ This project implements real-time object detection using Python and OpenCV.   It
 🚀Try it yourself
 
 If you want to try this project:
+
 1.Make sure you have Python 3 installed.
+
 2.Install required libraries:(pip install opencv-python numpy
 )
+
 3.Put these files in the same folder:
+
 -main.py
 -coco.names
 -ssd_mobilenet_v3_large_coco_2020_01_14.pbtxt
