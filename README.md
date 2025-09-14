@@ -13,9 +13,15 @@ If you want to try this project:
 3.Put these files in the same folder:
 
 -main.py
+
 -coco.names
+
 -ssd_mobilenet_v3_large_coco_2020_01_14.pbtxt
+
 -frozen_inference_graph.pb
+
 4.Run the program:(python main.py)
+
 5.The webcam will open and start detecting objects.
+
 6.Press q to exit anytime.
