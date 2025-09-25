@@ -35,12 +35,12 @@ while True:
 
         for i in indices:
             if isinstance(i, (list, tuple, np.ndarray)):
-                i = i[0]  # unpack index if needed
+                i = i[0]  
 
             box = bbox[i]
             x, y, w, h = box[0], box[1], box[2], box[3]
 
-            class_id = int(classIds[i])  # make sure it's an integer
+            class_id = int(classIds[i])  
             label = classNames[class_id - 1].upper()
 
             cv2.rectangle(img, (x, y), (x + w, y + h), color=(0, 255, 0), thickness=2)
@@ -51,10 +51,9 @@ while True:
                         cv2.FONT_HERSHEY_COMPLEX, 1, (0, 255, 0), 2)
 
     cv2.imshow("Output", img)
-
-    # Press 'q' to quit
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
 cap.release()
 cv2.destroyAllWindows()
+
